@@ -219,8 +219,8 @@ class ChunkedBodyParser {
         }
         this.current = this.WAITING_LENGTH_END
       } else {
-        this.len *= 10
-        this.len += char.codePointAt() - '0'.codePointAt()
+        this.len *= 16
+        this.len += parseInt(char, 16)
       }
       return
     }
