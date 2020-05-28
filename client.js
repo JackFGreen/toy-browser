@@ -1,9 +1,8 @@
 const net = require('net')
+const parser = require('./parser')
 
 const CONTENT_TYPE = 'Content-Type'
 const X_WWW_FORM_URLENCODED = 'application/x-www-form-urlencoded'
-const FORM_DATA = 'multipart/form-data'
-const TEXT_PLAIN = 'text/plain'
 const APPLICATION_JSON = 'application/json'
 
 const CONTENT_LENGTH = 'Content-Length'
@@ -268,7 +267,9 @@ const req = new Request({
 
 async function run() {
   const res = await req.send()
-  console.log(res)
+
+  const dom = parser.parseHTML(res.body)
+  console.log(JSON.stringify(dom))
 }
 
 run().catch((err) => console.log(err))

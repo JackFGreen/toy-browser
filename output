@@ -1,0 +1,908 @@
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "h"
+[Function: tagName]
+>>> "t"
+[Function: tagName]
+>>> "m"
+[Function: tagName]
+>>> "l"
+[Function: tagName]
+>>> " "
+[Function: beforeAttrName]
+>>> "m"
+[Function: attrName]
+>>> "a"
+[Function: attrName]
+>>> "a"
+[Function: attrName]
+>>> "a"
+[Function: attrName]
+>>> "="
+[Function: beforeAttrValue]
+>>> "a"
+[Function: unQuotedAttrValue]
+>>> " "
+[Function: beforeAttrName]
+>>> ">"
+<<<emit
+<<< {"type":"startTag","tagName":"html","selfClosing":false,"attrs":[{"name":"maaa","value":"a"}]}
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "h"
+[Function: tagName]
+>>> "e"
+[Function: tagName]
+>>> "a"
+[Function: tagName]
+>>> "d"
+[Function: tagName]
+>>> ">"
+<<<emit
+<<< {"type":"startTag","tagName":"head","selfClosing":false,"attrs":[]}
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "s"
+[Function: tagName]
+>>> "t"
+[Function: tagName]
+>>> "y"
+[Function: tagName]
+>>> "l"
+[Function: tagName]
+>>> "e"
+[Function: tagName]
+>>> ">"
+<<<emit
+<<< {"type":"startTag","tagName":"style","selfClosing":false,"attrs":[]}
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> "b"
+<<<emit
+<<< "b"
+[Function: data]
+>>> "o"
+<<<emit
+<<< "o"
+[Function: data]
+>>> "d"
+<<<emit
+<<< "d"
+[Function: data]
+>>> "y"
+<<<emit
+<<< "y"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "d"
+<<<emit
+<<< "d"
+[Function: data]
+>>> "i"
+<<<emit
+<<< "i"
+[Function: data]
+>>> "v"
+<<<emit
+<<< "v"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "#"
+<<<emit
+<<< "#"
+[Function: data]
+>>> "m"
+<<<emit
+<<< "m"
+[Function: data]
+>>> "y"
+<<<emit
+<<< "y"
+[Function: data]
+>>> "i"
+<<<emit
+<<< "i"
+[Function: data]
+>>> "d"
+<<<emit
+<<< "d"
+[Function: data]
+>>> "{"
+<<<emit
+<<< "{"
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "w"
+<<<emit
+<<< "w"
+[Function: data]
+>>> "i"
+<<<emit
+<<< "i"
+[Function: data]
+>>> "d"
+<<<emit
+<<< "d"
+[Function: data]
+>>> "t"
+<<<emit
+<<< "t"
+[Function: data]
+>>> "h"
+<<<emit
+<<< "h"
+[Function: data]
+>>> ":"
+<<<emit
+<<< ":"
+[Function: data]
+>>> "1"
+<<<emit
+<<< "1"
+[Function: data]
+>>> "0"
+<<<emit
+<<< "0"
+[Function: data]
+>>> "0"
+<<<emit
+<<< "0"
+[Function: data]
+>>> "p"
+<<<emit
+<<< "p"
+[Function: data]
+>>> "x"
+<<<emit
+<<< "x"
+[Function: data]
+>>> ";"
+<<<emit
+<<< ";"
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "b"
+<<<emit
+<<< "b"
+[Function: data]
+>>> "a"
+<<<emit
+<<< "a"
+[Function: data]
+>>> "c"
+<<<emit
+<<< "c"
+[Function: data]
+>>> "k"
+<<<emit
+<<< "k"
+[Function: data]
+>>> "g"
+<<<emit
+<<< "g"
+[Function: data]
+>>> "r"
+<<<emit
+<<< "r"
+[Function: data]
+>>> "o"
+<<<emit
+<<< "o"
+[Function: data]
+>>> "u"
+<<<emit
+<<< "u"
+[Function: data]
+>>> "n"
+<<<emit
+<<< "n"
+[Function: data]
+>>> "d"
+<<<emit
+<<< "d"
+[Function: data]
+>>> "-"
+<<<emit
+<<< "-"
+[Function: data]
+>>> "c"
+<<<emit
+<<< "c"
+[Function: data]
+>>> "o"
+<<<emit
+<<< "o"
+[Function: data]
+>>> "l"
+<<<emit
+<<< "l"
+[Function: data]
+>>> "o"
+<<<emit
+<<< "o"
+[Function: data]
+>>> "r"
+<<<emit
+<<< "r"
+[Function: data]
+>>> ":"
+<<<emit
+<<< ":"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "#"
+<<<emit
+<<< "#"
+[Function: data]
+>>> "f"
+<<<emit
+<<< "f"
+[Function: data]
+>>> "f"
+<<<emit
+<<< "f"
+[Function: data]
+>>> "5"
+<<<emit
+<<< "5"
+[Function: data]
+>>> "0"
+<<<emit
+<<< "0"
+[Function: data]
+>>> "0"
+<<<emit
+<<< "0"
+[Function: data]
+>>> "0"
+<<<emit
+<<< "0"
+[Function: data]
+>>> ";"
+<<<emit
+<<< ";"
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> "}"
+<<<emit
+<<< "}"
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> "b"
+<<<emit
+<<< "b"
+[Function: data]
+>>> "o"
+<<<emit
+<<< "o"
+[Function: data]
+>>> "d"
+<<<emit
+<<< "d"
+[Function: data]
+>>> "y"
+<<<emit
+<<< "y"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "d"
+<<<emit
+<<< "d"
+[Function: data]
+>>> "i"
+<<<emit
+<<< "i"
+[Function: data]
+>>> "v"
+<<<emit
+<<< "v"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "i"
+<<<emit
+<<< "i"
+[Function: data]
+>>> "m"
+<<<emit
+<<< "m"
+[Function: data]
+>>> "g"
+<<<emit
+<<< "g"
+[Function: data]
+>>> "{"
+<<<emit
+<<< "{"
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "w"
+<<<emit
+<<< "w"
+[Function: data]
+>>> "i"
+<<<emit
+<<< "i"
+[Function: data]
+>>> "d"
+<<<emit
+<<< "d"
+[Function: data]
+>>> "t"
+<<<emit
+<<< "t"
+[Function: data]
+>>> "h"
+<<<emit
+<<< "h"
+[Function: data]
+>>> ":"
+<<<emit
+<<< ":"
+[Function: data]
+>>> "3"
+<<<emit
+<<< "3"
+[Function: data]
+>>> "0"
+<<<emit
+<<< "0"
+[Function: data]
+>>> "p"
+<<<emit
+<<< "p"
+[Function: data]
+>>> "x"
+<<<emit
+<<< "x"
+[Function: data]
+>>> ";"
+<<<emit
+<<< ";"
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "b"
+<<<emit
+<<< "b"
+[Function: data]
+>>> "a"
+<<<emit
+<<< "a"
+[Function: data]
+>>> "c"
+<<<emit
+<<< "c"
+[Function: data]
+>>> "k"
+<<<emit
+<<< "k"
+[Function: data]
+>>> "g"
+<<<emit
+<<< "g"
+[Function: data]
+>>> "r"
+<<<emit
+<<< "r"
+[Function: data]
+>>> "o"
+<<<emit
+<<< "o"
+[Function: data]
+>>> "u"
+<<<emit
+<<< "u"
+[Function: data]
+>>> "n"
+<<<emit
+<<< "n"
+[Function: data]
+>>> "d"
+<<<emit
+<<< "d"
+[Function: data]
+>>> "-"
+<<<emit
+<<< "-"
+[Function: data]
+>>> "c"
+<<<emit
+<<< "c"
+[Function: data]
+>>> "o"
+<<<emit
+<<< "o"
+[Function: data]
+>>> "l"
+<<<emit
+<<< "l"
+[Function: data]
+>>> "o"
+<<<emit
+<<< "o"
+[Function: data]
+>>> "r"
+<<<emit
+<<< "r"
+[Function: data]
+>>> ":"
+<<<emit
+<<< ":"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "#"
+<<<emit
+<<< "#"
+[Function: data]
+>>> "f"
+<<<emit
+<<< "f"
+[Function: data]
+>>> "f"
+<<<emit
+<<< "f"
+[Function: data]
+>>> "1"
+<<<emit
+<<< "1"
+[Function: data]
+>>> "1"
+<<<emit
+<<< "1"
+[Function: data]
+>>> "1"
+<<<emit
+<<< "1"
+[Function: data]
+>>> "1"
+<<<emit
+<<< "1"
+[Function: data]
+>>> ";"
+<<<emit
+<<< ";"
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> "}"
+<<<emit
+<<< "}"
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "/"
+[Function: endTagOpen]
+>>> "s"
+[Function: tagName]
+>>> "t"
+[Function: tagName]
+>>> "y"
+[Function: tagName]
+>>> "l"
+[Function: tagName]
+>>> "e"
+[Function: tagName]
+>>> ">"
+<<<emit
+<<< {"type":"endTag","tagName":"style","selfClosing":false,"attrs":[]}
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "/"
+[Function: endTagOpen]
+>>> "h"
+[Function: tagName]
+>>> "e"
+[Function: tagName]
+>>> "a"
+[Function: tagName]
+>>> "d"
+[Function: tagName]
+>>> ">"
+<<<emit
+<<< {"type":"endTag","tagName":"head","selfClosing":false,"attrs":[]}
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "b"
+[Function: tagName]
+>>> "o"
+[Function: tagName]
+>>> "d"
+[Function: tagName]
+>>> "y"
+[Function: tagName]
+>>> ">"
+<<<emit
+<<< {"type":"startTag","tagName":"body","selfClosing":false,"attrs":[]}
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "d"
+[Function: tagName]
+>>> "i"
+[Function: tagName]
+>>> "v"
+[Function: tagName]
+>>> ">"
+<<<emit
+<<< {"type":"startTag","tagName":"div","selfClosing":false,"attrs":[]}
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "i"
+[Function: tagName]
+>>> "m"
+[Function: tagName]
+>>> "g"
+[Function: tagName]
+>>> " "
+[Function: beforeAttrName]
+>>> "i"
+[Function: attrName]
+>>> "d"
+[Function: attrName]
+>>> "="
+[Function: beforeAttrValue]
+>>> "\""
+[Function: doubleQuotedAttrValue]
+>>> "m"
+[Function: doubleQuotedAttrValue]
+>>> "y"
+[Function: doubleQuotedAttrValue]
+>>> "i"
+[Function: doubleQuotedAttrValue]
+>>> "d"
+[Function: doubleQuotedAttrValue]
+>>> "\""
+[Function: afterQuotedAttrValue]
+>>> "/"
+[Function: selfClosingStartTag]
+>>> ">"
+<<<emit
+<<< {"type":"startTag","tagName":"img","selfClosing":true,"attrs":[{"name":"id","value":"myid"}]}
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "i"
+[Function: tagName]
+>>> "m"
+[Function: tagName]
+>>> "g"
+[Function: tagName]
+>>> " "
+[Function: beforeAttrName]
+>>> "/"
+[Function: selfClosingStartTag]
+>>> ">"
+<<<emit
+<<< {"type":"startTag","tagName":"img","selfClosing":true,"attrs":[]}
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> " "
+<<<emit
+<<< " "
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "/"
+[Function: endTagOpen]
+>>> "d"
+[Function: tagName]
+>>> "i"
+[Function: tagName]
+>>> "v"
+[Function: tagName]
+>>> ">"
+<<<emit
+<<< {"type":"endTag","tagName":"div","selfClosing":false,"attrs":[]}
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "/"
+[Function: endTagOpen]
+>>> "b"
+[Function: tagName]
+>>> "o"
+[Function: tagName]
+>>> "d"
+[Function: tagName]
+>>> "y"
+[Function: tagName]
+>>> ">"
+<<<emit
+<<< {"type":"endTag","tagName":"body","selfClosing":false,"attrs":[]}
+[Function: data]
+>>> "\n"
+<<<emit
+<<< "\n"
+[Function: data]
+>>> "<"
+[Function: tagOpen]
+>>> "/"
+[Function: endTagOpen]
+>>> "h"
+[Function: tagName]
+>>> "t"
+[Function: tagName]
+>>> "m"
+[Function: tagName]
+>>> "l"
+[Function: tagName]
+>>> ">"
+<<<emit
+<<< {"type":"endTag","tagName":"html","selfClosing":false,"attrs":[]}
+before eof [Function: data]
+<<<emit
+<<< Symbol(EOF)
+after eof Symbol(EOF)
