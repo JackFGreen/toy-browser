@@ -1,3 +1,5 @@
+const css = require('css')
+
 // EOF: End Of File
 // 模拟文件，标识结束，不知道是最后一个字符，一般字符随着文件一起结束
 const EOF = Symbol('EOF')
@@ -59,6 +61,118 @@ let textNode
 
 const stack = [document]
 
+let CSSRules = []
+
+function parseCSS(s) {
+  const obj = css.parse(s)
+  CSSRules.push(...obj.stylesheet.rules)
+}
+
+function computeCSS(el) {
+  const { tagName } = el
+  const nodes = [el]
+  let p = el
+  while (p.parent && p.parent.tagName !== 'document') {
+    p = p.parent
+    nodes.push(p)
+  }
+
+  for (const rule of CSSRules) {
+    const { selectors, declarations } = rule
+
+    for (const s of selectors) {
+      const sels = s.split(' ').reverse()
+
+      // [id, class, tag]
+      const specificityArr = [0, 0, 0]
+
+      const isMatch = matchNodesAndSels(nodes, sels, specificityArr)
+
+      if (!isMatch) continue
+
+      const specificity = specificityArr[0] * 100 + specificityArr[1] * 10 + specificityArr[2]
+
+      for (const declar of declarations) {
+        const { property, value } = declar
+        if (!el.computedStyle) el.computedStyle = {}
+
+        // 新属性 || 老属性的权重比当前的小
+        if (
+          !el.computedStyle[property] ||
+          (el.computedStyle[property] && el.computedStyle[property].specificity < specificity)
+        ) {
+          if (!el.computedStyle[property]) el.computedStyle[property] = {}
+
+          el.computedStyle[property].selector = s
+          el.computedStyle[property].specificity = specificity
+          el.computedStyle[property].value = value
+        }
+      }
+    }
+  }
+}
+
+/**
+ * sels.length <= nodes.length
+ * sels: child parent body
+ * nodes: [child ... parent ...]? body html
+ */
+function matchNodesAndSels(nodes, sels, specificityArr) {
+  const selsLen = sels.length
+  let i = 0
+
+  const nodesLen = nodes.length
+  let j = 0
+
+  let isMatch = match(nodes[j++], sels[i++], specificityArr)
+  if (!isMatch || selsLen > nodesLen) return isMatch
+
+  while (i < selsLen) {
+    isMatch = false
+
+    let sel = sels[i]
+    const node = nodes[j]
+
+    while (!isMatch) {
+      if (j >= nodesLen) break
+      isMatch = match(node, sel, specificityArr)
+      if (!isMatch) j++
+    }
+
+    if (isMatch) {
+      j++
+      i++
+    } else {
+      break
+    }
+  }
+
+  return isMatch
+}
+
+function match(node, sel, specificityArr) {
+  let isMatch = false
+
+  if (sel.charAt(0) === '#') {
+    sel = sel.slice(1)
+    const attr = node.attributes.find((e) => e.name === 'id')
+
+    isMatch = attr && attr.value === sel
+    if (isMatch) specificityArr[0] += 1
+  } else if (sel.charAt(0) === '.') {
+    sel = sel.slice(1)
+    const attr = node.attributes.find((e) => e.name === 'class')
+
+    isMatch = attr && attr.value === sel
+    if (isMatch) specificityArr[1] += 1
+  } else {
+    isMatch = sel === node.tagName
+    if (isMatch) specificityArr[2] += 1
+  }
+
+  return isMatch
+}
+
 function emit(c) {
   const top = stack[stack.length - 1]
 
@@ -80,10 +194,18 @@ function emit(c) {
 
       if (!selfClosing) stack.push(el)
       top.children.push(el)
+      el.parent = top
+
+      // after set parent
+      if (CSSRules.length) computeCSS(el)
     }
 
     if (type === END_TAG) {
       if (tagName === top.tagName) {
+        if (tagName === 'style') {
+          const styleCont = top.children[0].data
+          parseCSS(styleCont)
+        }
         stack.pop()
       } else {
         throw new Error('startTag and endTag not match')
@@ -101,7 +223,10 @@ function emit(c) {
 
   textNode.data += c
 
-  if (!top.children.includes(textNode)) top.children.push(textNode)
+  if (!top.children.includes(textNode)) {
+    top.children.push(textNode)
+    textNode.parent = top
+  }
 }
 
 /**
@@ -113,7 +238,7 @@ function emit(c) {
  *
  * missing-end-tag-name
  * https://html.spec.whatwg.org/multipage/parsing.html#parse-error-missing-end-tag-name
- * This error occurs if the parser encounters a U+003E (>) code point where an end tag name is expected, i.e., </>. The parser completely ignores whole "</>" code point sequence.
+ * This error occurs if the parser encounters a U+003E (>) code point where an end tag name is expected, i.e., </=>. The parser completely ignores whole "</>" code point sequence.
  *
  * eof-before-tag-name
  * https://html.spec.whatwg.org/multipage/parsing.html#parse-error-eof-before-tag-name

@@ -1,0 +1,145 @@
+Element {
+  nodeType: 1,
+  tagName: 'div',
+  attributes: [],
+  children: [],
+  parent: Element {
+    nodeType: 1,
+    tagName: 'body',
+    attributes: [],
+    children: [ [Element], [Circular] ],
+    parent: Element {
+      nodeType: 1,
+      tagName: 'html',
+      attributes: [Array],
+      children: [Array],
+      parent: [Element]
+    }
+  },
+  computedStyle: {
+    'background-color': { selector: 'div', specificity: 1, value: '#ccc' }
+  }
+}
+Element {
+  nodeType: 1,
+  tagName: 'img',
+  attributes: [ AttrToken { name: 'id', value: 'myid' } ],
+  children: [],
+  parent: Element {
+    nodeType: 1,
+    tagName: 'div',
+    attributes: [],
+    children: [ [Element], [Circular] ],
+    parent: Element {
+      nodeType: 1,
+      tagName: 'body',
+      attributes: [],
+      children: [Array],
+      parent: [Element]
+    },
+    computedStyle: { 'background-color': [Object] }
+  },
+  computedStyle: {
+    width: { selector: 'img', specificity: 1, value: '50px' },
+    border: { selector: 'img', specificity: 1, value: '1px solid red' }
+  }
+}
+Element {
+  nodeType: 1,
+  tagName: 'img',
+  attributes: [ AttrToken { name: 'id', value: 'myid' } ],
+  children: [],
+  parent: Element {
+    nodeType: 1,
+    tagName: 'div',
+    attributes: [],
+    children: [ [Element], [Circular] ],
+    parent: Element {
+      nodeType: 1,
+      tagName: 'body',
+      attributes: [],
+      children: [Array],
+      parent: [Element]
+    },
+    computedStyle: { 'background-color': [Object] }
+  },
+  computedStyle: {
+    width: { selector: 'body div #myid', specificity: 102, value: '100px' },
+    border: { selector: 'img', specificity: 1, value: '1px solid red' },
+    'background-color': { selector: 'body div #myid', specificity: 102, value: '#ff5000' }
+  }
+}
+Element {
+  nodeType: 1,
+  tagName: 'img',
+  attributes: [ AttrToken { name: 'id', value: 'myid' } ],
+  children: [],
+  parent: Element {
+    nodeType: 1,
+    tagName: 'div',
+    attributes: [],
+    children: [ [Element], [Circular] ],
+    parent: Element {
+      nodeType: 1,
+      tagName: 'body',
+      attributes: [],
+      children: [Array],
+      parent: [Element]
+    },
+    computedStyle: { 'background-color': [Object] }
+  },
+  computedStyle: {
+    width: { selector: 'body div #myid', specificity: 102, value: '100px' },
+    border: { selector: 'img', specificity: 1, value: '1px solid red' },
+    'background-color': { selector: 'body div #myid', specificity: 102, value: '#ff5000' }
+  }
+}
+Element {
+  nodeType: 1,
+  tagName: 'img',
+  attributes: [],
+  children: [],
+  parent: Element {
+    nodeType: 1,
+    tagName: 'div',
+    attributes: [],
+    children: [ [Element], [Element], [Element], [Circular] ],
+    parent: Element {
+      nodeType: 1,
+      tagName: 'body',
+      attributes: [],
+      children: [Array],
+      parent: [Element]
+    },
+    computedStyle: { 'background-color': [Object] }
+  },
+  computedStyle: {
+    width: { selector: 'img', specificity: 1, value: '50px' },
+    border: { selector: 'img', specificity: 1, value: '1px solid red' }
+  }
+}
+Element {
+  nodeType: 1,
+  tagName: 'img',
+  attributes: [],
+  children: [],
+  parent: Element {
+    nodeType: 1,
+    tagName: 'div',
+    attributes: [],
+    children: [ [Element], [Element], [Element], [Circular] ],
+    parent: Element {
+      nodeType: 1,
+      tagName: 'body',
+      attributes: [],
+      children: [Array],
+      parent: [Element]
+    },
+    computedStyle: { 'background-color': [Object] }
+  },
+  computedStyle: {
+    width: { selector: 'body div img', specificity: 3, value: '30px' },
+    border: { selector: 'img', specificity: 1, value: '1px solid red' },
+    'background-color': { selector: 'body div img', specificity: 3, value: '#ff1111' }
+  }
+}

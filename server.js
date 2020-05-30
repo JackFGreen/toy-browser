@@ -12,6 +12,13 @@ const server = http.createServer((req, res) => {
     `<html maaa=a >
 <head>
     <style>
+div {
+    background-color: #ccc;
+}
+img {
+    width: 50px;
+    border: 1px solid red;
+}
 body div #myid{
     width:100px;
     background-color: #ff5000;

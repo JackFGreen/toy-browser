@@ -269,7 +269,6 @@ async function run() {
   const res = await req.send()
 
   const dom = parser.parseHTML(res.body)
-  console.log(JSON.stringify(dom))
 }
 
 run().catch((err) => console.log(err))
