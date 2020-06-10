@@ -20,5 +20,8 @@
   "homepage": "https://github.com/JackFGreen/toy-browser#readme",
   "dependencies": {
     "css": "^2.2.4"
+  },
+  "devDependencies": {
+    "images": "^3.2.2"
   }
 }

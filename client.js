@@ -1,5 +1,8 @@
 const net = require('net')
+const images = require('images')
+
 const parser = require('./parser')
+const render = require('./render')
 
 const CONTENT_TYPE = 'Content-Type'
 const X_WWW_FORM_URLENCODED = 'application/x-www-form-urlencoded'
@@ -269,6 +272,12 @@ async function run() {
   const res = await req.send()
 
   const dom = parser.parseHTML(res.body)
+
+  const viewport = images(800, 600)
+
+  render(viewport, dom)
+
+  viewport.save('viewport.jpg')
 }
 
 run().catch((err) => console.log(err))

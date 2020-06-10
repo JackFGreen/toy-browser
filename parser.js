@@ -1,4 +1,5 @@
 const css = require('css')
+const { layout } = require('./layout')
 
 // EOF: End Of File
 // 模拟文件，标识结束，不知道是最后一个字符，一般字符随着文件一起结束
@@ -206,6 +207,7 @@ function emit(c) {
           const styleCont = top.children[0].data
           parseCSS(styleCont)
         }
+        layout(top)
         stack.pop()
       } else {
         throw new Error('startTag and endTag not match')
